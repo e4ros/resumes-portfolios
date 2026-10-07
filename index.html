@@ -3,17 +3,23 @@
 <head>
     <title>Ethan Granat</title>
     <style>
-        /* Centers everything, updates font, and enforces black text only */
+        /* Centers everything perfectly in the middle of the screen */
         body {
             font-family: Arial, sans-serif;
-            text-align: center;
             color: #000000;
-            margin-top: 10vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            text-align: center;
         }
-        /* Removes bullet points and centers the list */
+        /* Removes bullet points and margins */
         ul {
             list-style-type: none;
             padding: 0;
+            margin: 0;
         }
         /* Spacing for the stacked vertical links */
         li {
@@ -25,9 +31,15 @@
             text-decoration: none;
             font-size: 18px;
         }
-        /* Adds an underline only when hovering over the links */
+        /* Adds an underline when hovering over any link */
         a:hover {
             text-decoration: underline;
+        }
+        /* Creates a clean separation for the contact section */
+        .contact-section {
+            margin-top: 40px;
+            border-top: 1px solid #000000;
+            padding-top: 20px;
         }
     </style>
 </head>
@@ -39,6 +51,14 @@
         <li><a href="EthanGranatPortfolio-2-17-26.pdf" target="_blank">Portfolio</a></li>
         <li><a href="Granat_Ethan_Resume_Oct-26.pdf" target="_blank">Resume</a></li>
     </ul>
+
+    <!-- Contact Info Section -->
+    <div class="contact-section">
+        <ul>
+            <li><a href="mailto:your.ethangranat@gmail.com">Email</a></li>
+            <li><a href="https://linkedin.com/in/ethangranat" target="_blank">LinkedIn</a></li>
+        </ul>
+    </div>
 
 </body>
 </html>
