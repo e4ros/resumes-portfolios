@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <!-- Fixes the mobile scaling and zooming issue -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ethan Granat</title>
     <style>
-        /* Centers everything perfectly in the middle of the screen */
         body {
             font-family: Arial, sans-serif;
             color: #000000;
@@ -14,48 +15,48 @@
             min-height: 100vh;
             margin: 0;
             text-align: center;
+            padding: 20px;
+            box-sizing: border-box;
         }
-        /* Removes bullet points and margins */
         ul {
             list-style-type: none;
             padding: 0;
             margin: 0;
         }
-        /* Spacing for the stacked vertical links */
         li {
-            margin: 15px 0;
+            margin: 20px 0; /* Slightly increased spacing for easier mobile tapping */
         }
-        /* Styles links to be black text without underlines */
         a {
             color: #000000;
             text-decoration: none;
-            font-size: 18px;
+            font-size: 22px; /* Increased font size for better mobile readability */
         }
-        /* Adds an underline when hovering over any link */
         a:hover {
             text-decoration: underline;
         }
-        /* Creates a clean separation for the contact section */
         .contact-section {
             margin-top: 40px;
             border-top: 1px solid #000000;
             padding-top: 20px;
+            width: 200px; /* Limits the divider line width to keep it looking clean */
+        }
+        .contact-section a {
+            font-size: 18px; /* Slightly smaller font for secondary contact links */
         }
     </style>
 </head>
 <body>
 
-    <h1 style="font-size: 32px; font-weight: bold; margin-bottom: 25px;">Ethan Granat</h1>
+    <h1 style="font-size: 38px; font-weight: bold; margin-bottom: 25px; margin-top: 0;">Ethan Granat</h1>
     
     <ul>
         <li><a href="EthanGranatPortfolio-2-17-26.pdf" target="_blank">Portfolio</a></li>
         <li><a href="Granat_Ethan_Resume_Oct-26.pdf" target="_blank">Resume</a></li>
     </ul>
 
-    <!-- Contact Info Section -->
     <div class="contact-section">
         <ul>
-            <li><a href="mailto:ethangranat@gmail.com">Email</a></li>
+            <li><a href="mailto:ethangranat@gmail.com.com">Email</a></li>
             <li><a href="https://linkedin.com/in/ethangranat" target="_blank">LinkedIn</a></li>
         </ul>
     </div>
